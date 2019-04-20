@@ -1,0 +1,1051 @@
+@charset "UTF-8";
+/*
+Tags HTML formatação padrão
+*/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Verdana, Verdana, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-indent: 3rem;
+  text-align: center;
+}
+p {
+  text-indent: 2rem;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a:hover {
+color: mediumblue;
+text-decoration: underline;;
+
+}
+
+a {
+  color:blue ;
+}
+/*
+ Classes para utilização do FLOAT
+*/
+.float.start,
+.float.inline-start,.float-inline-start {
+  float: inline-start;
+}
+
+.float.end,
+.float.inline-end ,.float-inline-end{
+  float: inline-end;
+}
+
+.float.left,
+.float-left {
+  float: left;
+}
+.float.right,
+.float-right {
+  float: right;
+}
+
+.float.clear,
+.clear-both {
+  clear: both;
+}
+.float.clear.left,
+.clear-left {
+  clear: left;
+}
+.float.clear.right,
+.clear-right {
+  clear: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+
+Classes de controle das bordas e sombras
+
+*/
+.border-1{
+  border-style: solid;
+  border-radius: 1px;
+  border-color: black;
+}
+
+
+/*
+Classe de controle de visibilidade
+
+*/
+.hide {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.show,
+.visible {
+  visibility: visible;
+}
+
+/*
+Classe que controla como os menus funcionam
+
+*/
+
+
+
+
+.menu-1{
+  width: 100%;
+  background-color: grey;
+  display: block;
+
+
+}
+.menu-1 a{
+  color: white;
+
+  height: auto;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  background-color: grey;
+/*
+border: 1px solid black;
+border-collapse: collapse;
+*/
+}
+.menu-1 a:hover{
+    background-color: slategray;
+    text-decoration: none;
+
+}
+
+/*
+ Controle da forma que mostra os Texto e altera a Fonte
+
+*/
+
+.text.right,
+.text-right {
+  text-align: right;
+}
+.text.left,
+.text-left {
+  text-align: left;
+}
+.text.center,
+.text-center {
+  text-align: center;
+}
+
+
+.text.underline,
+.text-underline {
+  text-decoration: underline;
+}
+
+.text.overline,
+.text-overline {
+  text-decoration: overline;
+}
+
+.text.blink,
+.text-blink {
+  text-decoration: blink;
+}
+
+.text.through,
+.text-through,
+.text-line-through {
+  text-decoration: line-through;
+}
+.text.justify,
+.text-justify {
+  text-align: justify;
+}
+.text.italic,
+.text-italic {
+  font-style: italic;
+}
+.text.oblique,
+.text-oblique {
+  font-style: oblique;
+}
+.text.bold,
+.text-bold {
+  font-weight: bold;
+}
+.text.bolder,
+.text-bolder {
+  font-weight: bolder;
+}
+.text.oblique,
+.text-lighter {
+  font-weight: lighter;
+}
+.text.clip,
+.text-clip {
+  text-overflow: clip;
+}
+.text.ellipsis,
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text.top,
+.text-top {
+  vertical-align: text-top;
+}
+.text.bottom,
+.text-bottom {
+  vertical-align: text-bottom;
+}
+.text.middle,
+.text-middle {
+  vertical-align: middle;
+}
+.text.super,
+.text-super {
+  vertical-align: super;
+}
+
+.text.sub,
+.text-sub {
+  vertical-align: sub;
+}
+
+.text.upper,
+.text.uppercase {
+  text-transform: uppercase;
+}
+.text.lower,
+.text.lowercase {
+  text-transform: lowercase;
+}
+.text.capital,
+.text.capitalize {
+  text-transform: capitalize;
+}
+
+
+/**
+
+Classes que controlam a cor da Fonte
+*/
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+/*
+Classes que controlam a cor do background
+*/
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-grey {
+  background-color: gray;
+}
+
+
+/*
+Classes que controlam a forma que mostra os objetos
+*/
+.display-run-in{
+  display: run-in;
+}
+.display-grid{
+  display: grid;
+}
+
+
+.block,
+.d-block {
+  display: block;
+}
+.block.inline,
+.inline-block {
+  display: inline-block;
+}
+
+.inline,
+.d-inline {
+  display: inline;
+}
+
+.flex ,.display-flex,.d-flex{
+  display: flex;
+}
+.display-inline-block{
+  display: inline-block;
+}
+.display-inline-flex{
+  display: inline-flex;
+}
+.display-inline-table{
+  display: inline-table;
+}
+.display-subgrid{
+  display: subgrid;
+}
+.display-contents{
+  display: contents;
+}
+.display-list-item{
+  display: list-item;
+}
+.display-flow-root{
+  display: flow-root;
+}
+
+.display-table{
+  display: table;
+}
+.display-table-row{
+  display: table-row;
+}
+.display-table-header-group{
+  display: table-header-group;
+}
+.display-table-row-group{
+  display: table-row-group;
+}
+.display-table-column-group{
+  display: table-column-group;
+}
+.display-table-column{
+  display: table-column;
+}
+.display-table-footer-group{
+  display: table-footer-group;
+}
+.display-table-caption{
+  display: table-caption;
+}
+
+.display-table-cell{
+  display: table-cell;
+}
+.display-inherit{
+  display: inherit;
+}
+
+/*
+
+Classes que controlam como o Flex vai se comportar
+
+*/
+
+.flex.wrap{
+  flex-wrap: wrap;
+}
+.flex.wrap-reserve{
+  flex-wrap: wrap-reverse;
+}
+.flex.no-wrap{
+  flex-wrap: nowrap;;
+}
+
+
+
+/*
+
+Flex justify content
+
+*/
+
+.flex.justify-center {
+	justify-content: center;
+
+
+}
+
+
+.flex.justify-start , .row.left ,.row.justify-start {
+  justify-content: start;
+}
+
+.flex.justify-end ,.row.right , .row.justify-end{
+  justify-content: flex-end;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.justify-around {
+  justify-content: space-around;
+}
+
+
+/*
+
+Flex Align Items
+
+*/
+
+
+
+
+.flex.items-baseline {
+  align-items: baseline;
+
+}
+.flex.items-center {
+  align-items: center;
+
+}
+.flex.items-start {
+  align-items: flex-start;
+}
+
+.flex.items-end {
+  align-items: flex-end;
+}
+
+.flex.items-strech {
+  align-items: stretch;
+}
+
+
+
+/*
+
+Flex align Content
+
+
+*/
+
+
+.flex.align-center {
+  align-content: center;
+
+}
+
+.flex.align-start {
+  align-content: flex-start;
+
+}
+
+.flex.align-end {
+  align-content: flex-end;
+}
+
+.flex.align-stretch {
+  align-content: stretch;
+}
+
+.flex.align-between {
+  align-content: space-between;
+}
+
+
+.flex.align-around{
+  align-content: space-around;
+
+}
+
+
+
+
+/*
+
+Flex Align self
+
+*/
+
+
+.align-self-auto{
+  align-self: auto;
+}
+.align-self-stretch{
+  align-self: stretch;
+}
+.align-self-flex-start{
+  align-self: flex-start;
+}
+.align-self-flex-end{
+  align-self: flex-end;
+}
+.align-self-baseline{
+  align-self: baseline;
+}
+.align-self-center{
+  align-self: center;
+}
+
+
+
+/*
+
+
+Controle da posição em que os objetos se encontra (Sem ser FLOAT)
+
+*/
+.circle {
+  border-radius: 50%;
+}
+
+.relative,.position-relative {
+  position: relative;
+}
+.fixed,.position-fixed {
+  position: fixed;
+}
+.absolute,.position-absolute {
+  position: absolute;
+}
+
+.fixed.right,
+.absolute.right ,.right-0{
+  right: 0;
+}
+.fixed.bottom,
+.absolute.bottom ,.bottom-0{
+  bottom: 0;
+}
+.fixed.center,
+.absolute.center,.center-0 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed.top,
+.absolute.top,.top-0 {
+  top: 0;
+}
+.fixed.left,
+.absolute.left ,.left-0{
+  left: 0;
+}
+
+
+
+
+
+
+/*
+
+Classes que controlam o espaçamento Interno (PADDING) e o espaçamentos entre os objetos (MARGIN)
+
+*/
+
+
+
+
+/*
+
+Controle do margin
+
+*/
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-1 {
+  margin: 1rem;
+}
+
+.margin-2 {
+  margin: 2rem;
+}
+
+.margin-3 {
+  margin: 3rem;
+}
+
+.margin-4 {
+  margin: 4rem;
+}
+
+.margin-5 {
+  margin: 5rem;
+}
+.margin-left-0 {
+  margin-left: 0;
+}
+.margin-left-1{
+  margin-left: 1rem;
+}
+.margin-left-2{
+  margin-left: 2rem;
+}
+.margin-left-3{
+  margin-left: 3rem;
+}
+.margin-left-4{
+  margin-left: 4rem;
+}
+.margin-left-5{
+  margin-left: 5rem;
+}
+.margin-right-0{
+  margin-right: 0;
+}
+
+.margin-right-1{
+  margin-right: 1rem;
+}
+
+.margin-right-2{
+  margin-right: 2rem;
+}
+
+.margin-right-3{
+  margin-right: 3rem;
+}
+
+.margin-right-4{
+  margin-right: 4rem;
+
+}
+
+.margin-right-5{
+  margin-right: 5rem;
+}
+.margin-top-0 {
+  margin-top: 0;
+}
+.margin-top-1 {
+  margin-top: 1rem;
+}
+.margin-top-2 {
+  margin-top: 2rem;
+}
+.margin-top-3 {
+  margin-top: 3rem;
+}
+.margin-top-4 {
+  margin-top: 4rem;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+.margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+.margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+.margin-bottom-5 {
+  margin-bottom: 5rem;
+}
+.margin-auto-top , .margin-bottom-auto{
+  margin-bottom: auto;
+}
+.margin-auto-bottom , .margin-top-auto{
+  margin-top: auto;
+}
+.margin-center,.margin-auto-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.margin-auto{
+  margin: auto;
+}
+.margin-auto-left,.margin-right-auto{
+  margin-right: auto;
+}
+.margin-auto-right,.margin-auto-left{
+  margin-left: auto;
+}
+
+/*
+ Controle do padding
+
+*/
+
+
+.padding-0 {
+  padding: 0;
+}
+.padding-1{
+  padding: 1rem;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-3 {
+  padding: 3rem;
+}
+
+.padding-4 {
+  padding: 4rem;
+}
+
+.padding-5{
+  padding: 5rem;
+}
+
+.padding-left-1
+{
+padding-left: 1rem;
+}.padding-left-2
+{
+padding-left: 2rem;
+}.padding-left-3
+{
+padding-left: 3rem;
+}.padding-left-4
+{
+padding-left: 4rem;
+}.padding-left-5
+{
+padding-left: 5rem;
+}.padding-top-1
+{
+padding-top: 1rem;
+}
+.padding-top-2
+{
+padding-top: 2rem;
+}
+.padding-top-3
+{
+padding-top: 3rem;
+}
+.padding-top-4
+{
+padding-top: 4rem;
+}
+.padding-top-5
+{
+padding-top: 5rem;
+}
+.padding-right-1
+{
+padding-right: 1rem;
+}
+.padding-right-2
+{
+padding-right: 2rem;
+}
+.padding-right-3
+{
+padding-right: 3rem;
+}
+.padding-right-4
+{
+padding-right: 4rem;
+}
+.padding-right-5
+{
+padding-right: 5rem;
+}
+.padding-bottom-1
+{
+padding-bottom: 1rem;
+}
+.padding-bottom-2
+{
+padding-bottom: 2rem;
+}
+.padding-bottom-3
+{
+padding-bottom: 3rem;
+}
+.padding-bottom-4
+{
+padding-bottom: 4rem;
+}
+.padding-bottom-5
+{
+padding-bottom: 5rem;
+}
+
+
+.padding-auto-center{
+  padding-left: 25%;
+  padding-right: 25%;
+
+}
+.padding-auto-left{
+  padding-left: 50%;
+}
+.padding-auto-right{
+  padding-right: 50%;
+}
+
+/*
+
+Classes que controlar a forma de mostrar os objetos
+*/
+.box{
+  padding: 1rem;
+  width: 100%;
+  display: block;
+}
+.container{
+  margin: auto;
+  width: 80%;
+  display: block;
+}
+.col{
+  padding: 1rem;
+  margin: 1rem;
+  width: auto;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.fluid.width {
+  width: 100%;
+}
+.fluid.height {
+  height: 100%;
+}
+
+.fluid {
+  width: 100%;
+  height: 100%;
+}
+
+
+.fullscreen{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media only screen and (max-width: 576px) {
+ .box,.container,.col{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .float-right-small{
+    float: right;
+  }
+  .float-left-small{
+    float: left;
+  }
+  .small-1{
+    width: 8.33%;
+  }
+  .small-2 {
+    width: 16.66%;
+  }
+  .small-3 {
+    width: 25%;
+  }
+  .small-4 {
+    width: 33.33%;
+  }
+  .small-5 {
+    width: 41.66%;
+  }
+  .small-6 {
+    width: 50%;
+  }
+  .small-7 {
+    width: 58.33%;
+  }
+  .small-8 {
+    width: 66.66%;
+  }
+  .small-9 {
+    width: 75%;
+  }
+  .small-10 {
+    width: 83.33%;
+  }
+  .small-11 {
+    width: 91.66%;
+  }
+  .small-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .medium-1 {
+    width: 8.33%;
+  }
+  .medium-2 {
+    width: 16.66%;
+  }
+  .medium-3 {
+    width: 25%;
+  }
+.medium-4 {
+    width: 33.33%;
+  }
+  .medium-5 {
+    width: 41.66%;
+  }
+  .medium-6 {
+    width: 50%;
+  }
+  .medium-7 {
+    width: 58.33%;
+  }
+  .medium-8 {
+    width: 66.66%;
+  }
+  .medium-9 {
+    width: 75%;
+  }
+.medium-10 {
+    width: 83.33%;
+  }
+  .medium-11 {
+    width: 91.66%;
+  }
+  .medium-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .large-1 {
+    width: 8.33%;
+  }
+  .large-2 {
+    width: 16.66%;
+  }
+  .large-3 {
+    width: 25%;
+  }
+  .large-4 {
+    width: 33.33%;
+  }
+  .large-5 {
+    width: 41.66%;
+  }
+  .large-6 {
+    width: 50%;
+  }
+  .large-7 {
+    width: 58.33%;
+  }
+  .large-8 {
+    width: 66.66%;
+  }
+  .large-9 {
+    width: 75%;
+  }
+  .large-10 {
+    width: 83.33%;
+  }
+  .large-11 {
+    width: 91.66%;
+  }
+  .large-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .big-1 {
+    width: 8.33%;
+  }
+  .big-2{
+    width: 16.66%;
+  }
+  .big-3{
+    width: 25%;
+  }
+  .big-4{
+    width: 33.33%;
+  }
+  .big5{
+    width: 41.66%;
+  }
+  .big-6{
+    width: 50%;
+  }
+  .big-7{
+    width: 58.33%;
+  }
+  .big-8{
+    width: 66.66%;
+  }
+  .big-9{
+    width: 75%;
+  }
+  .big-10{
+    width: 83.33%;
+  }
+  .big-11{
+    width: 91.66%;
+  }
+  .big-12{
+    width: 100%;
+  }
+}
