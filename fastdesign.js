@@ -55,6 +55,7 @@ function start() {
   let defaultCSS = document.getElementById("defaultCSS");
   if (!defaultCSS) {
     defaultCSS = document.createElement("link");
+    defaultCSS.id = "defaultCSS";
     defaultCSS.rel = "stylesheet";
     defaultCSS.href = "default.css";
     document.head.appendChild(defaultCSS);
